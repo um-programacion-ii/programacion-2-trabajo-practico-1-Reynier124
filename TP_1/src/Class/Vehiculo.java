@@ -61,7 +61,7 @@ public class Vehiculo {
         }
         this.capacidadCargaKg = capacidadCargaKg;
     }
-
+    /*
     public void  mostrarInformacion(){
         System.out.println("El vehiculo tiene los siguientes datos:");
         System.out.println("La patente: "+this.getPatente());
@@ -69,5 +69,6 @@ public class Vehiculo {
         System.out.println("El año: "+this.getAnio());
         System.out.println("La capacitad de carga en kg: "+this.getCapacidadCargaKg());
     }
+     */
 
 }

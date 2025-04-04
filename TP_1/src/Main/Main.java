@@ -23,6 +23,9 @@ public class Main {
         vp.mostrarDatos(vehiculos.get(0));
         System.out.println("---------");
         vp.mostrarDatos(vehiculos.get(1));
+
+        System.out.println("#########");
+        vp.mostrarVehiculos(vehiculos);
     }
 
 }

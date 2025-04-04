@@ -6,6 +6,7 @@ import Class.Auto;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class Main {
@@ -25,6 +26,13 @@ public class Main {
         vp.mostrarDatos(vehiculos.get(1));
 
         System.out.println("#########");
+        vp.mostrarVehiculos(vehiculos);
+
+        vehiculos = vehiculos.stream()
+                .filter(v -> v.getPatente().equalsIgnoreCase("123RTYMA"))
+                .collect(Collectors.toList());
+
+        System.out.println("************");
         vp.mostrarVehiculos(vehiculos);
     }
 

@@ -1,6 +1,7 @@
 package Main;
 import Class.Vehiculo;
 import  Class.VehiculoPrinter;
+import Class.Camion;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -14,6 +15,14 @@ public class Main {
         vp.mostrarVehiculo("99SDGI12", "Ferrari", 1820, 93);
         System.out.println("---------");
         vp.mostrarVehiculo("99SDGI15", "Ferrari", 1943, -23);
+
+        System.out.println("---------");
+        Vehiculo v1 = new Vehiculo("465LAK21", "Audi", 2007, 56);
+        Camion c1 = new Camion("123RTYMA", "Renault", 2003, 903.23, true);
+
+        vp.mostrarDatos(v1);
+        System.out.println("---------");
+        vp.mostrarDatos(c1);
     }
 
 }

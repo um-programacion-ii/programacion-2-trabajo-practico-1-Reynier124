@@ -62,4 +62,12 @@ public class Vehiculo {
         this.capacidadCargaKg = capacidadCargaKg;
     }
 
+    @Override
+    public String toString() {
+        return "Patente: " + patente +
+                "\nMarca: " + marca +
+                "\nAño: " + anio +
+                "\nCapacidad de carga (Kg): " + capacidadCargaKg;
+    }
+
 }

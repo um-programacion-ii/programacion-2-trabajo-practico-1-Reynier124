@@ -2,7 +2,7 @@ package Class;
 
 import java.time.Year;
 
-public class Vehiculo {
+public abstract class Vehiculo {
     private String patente;
     private String marca;
     private int anio;
@@ -12,9 +12,7 @@ public class Vehiculo {
         setPatente(patente);
         this.marca = marca;
         setAnio(anio);
-        //this.anio = anio;
         setCapacidadCargaKg(capacidadCargaKg);
-        //this.capacidadCargaKg = capacidadCargaKg;
     }
 
     public Vehiculo() {
@@ -62,12 +60,12 @@ public class Vehiculo {
         this.capacidadCargaKg = capacidadCargaKg;
     }
 
-    public void  mostrarInformacion(){
-        System.out.println("El vehiculo tiene los siguientes datos:");
-        System.out.println("La patente: "+this.getPatente());
-        System.out.println("La marca: "+this.getMarca());
-        System.out.println("El año: "+this.getAnio());
-        System.out.println("La capacitad de carga en kg: "+this.getCapacidadCargaKg());
+    @Override
+    public String toString() {
+        return "Patente: " + patente +
+                "\nMarca: " + marca +
+                "\nAño: " + anio +
+                "\nCapacidad de carga (Kg): " + capacidadCargaKg;
     }
 
 }

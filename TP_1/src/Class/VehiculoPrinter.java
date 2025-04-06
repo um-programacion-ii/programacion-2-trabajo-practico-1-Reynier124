@@ -1,19 +1,20 @@
 package Class;
 
+import java.util.List;
+
 public class VehiculoPrinter {
     public VehiculoPrinter() {
     }
 
     public void mostrarDatos(Vehiculo v) {
+        System.out.println("El vehiculo tiene los siguientes datos:");
         System.out.println(v.toString());
     }
 
-    public void mostrarVehiculo(String patente, String marca, int anio, double capacidadCargaKg) {
-        try {
-            Vehiculo vehiculo = new Vehiculo(patente, marca, anio, capacidadCargaKg);
-            mostrarDatos(vehiculo);
-        }catch (IllegalArgumentException e) {
-            System.out.println("Error al crear el vehiculo: " + e.getMessage());
+    public void mostrarVehiculos(List<Vehiculo> vehiculos) {
+        for (Vehiculo v : vehiculos) {
+            mostrarDatos(v);
+            System.out.println("--------");
         }
     }
 }

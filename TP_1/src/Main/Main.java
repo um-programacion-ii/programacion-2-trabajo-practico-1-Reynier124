@@ -30,6 +30,7 @@ public class Main {
         System.out.println("---------");
         //vp.mostrarDatos(vehiculos.get(1));
         vehiculos.get(1).mostrarInformacion();
+
     }
 
 }

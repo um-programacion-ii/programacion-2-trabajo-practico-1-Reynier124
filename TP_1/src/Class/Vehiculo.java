@@ -2,7 +2,7 @@ package Class;
 
 import java.time.Year;
 
-public class Vehiculo {
+public abstract class Vehiculo {
     private String patente;
     private String marca;
     private int anio;
@@ -12,9 +12,7 @@ public class Vehiculo {
         setPatente(patente);
         this.marca = marca;
         setAnio(anio);
-        //this.anio = anio;
         setCapacidadCargaKg(capacidadCargaKg);
-        //this.capacidadCargaKg = capacidadCargaKg;
     }
 
     public Vehiculo() {
@@ -60,6 +58,14 @@ public class Vehiculo {
             throw new IllegalArgumentException("La capacidad de carga debe ser positiva.");
         }
         this.capacidadCargaKg = capacidadCargaKg;
+    }
+
+    @Override
+    public String toString() {
+        return "Patente: " + patente +
+                "\nMarca: " + marca +
+                "\nAño: " + anio +
+                "\nCapacidad de carga (Kg): " + capacidadCargaKg;
     }
 
 }

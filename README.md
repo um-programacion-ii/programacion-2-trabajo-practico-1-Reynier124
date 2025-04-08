@@ -1,6 +1,22 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-JQrLgaz)
 # 🧠 Trabajo Práctico: Sistema de Gestión de Vehículos (Java + SOLID + GitHub)
 
+## Autor
+> - Nombre: Reynier López
+
+## Requisitos previos
+- JDK 8 o superior
+- Un IDE, en este caso en particular se utiliza IntelliJ Idea
+- Git
+
+## Instrucciones para compilar y ejecutar
+- Clonar el repo: git clone git@github.com:um-programacion-ii/programacion-2-trabajo-practico-1-Reynier124.git
+- Ingresar al proyecto: cd TP_1/src
+- Compilar y ejecutar a traves de su IDE de preferencia
+
+## Ejemplo de uso
+- Al ejecutarse simplemente te mostrará el resultado de la impresión de una lista recorrida y de un stream filtrado por la patente
+
 ## 📌 Objetivo General
 
 Desarrollar una aplicación en Java para gestionar vehículos de una empresa, aplicando los principios de programación orientada a objetos y los **primeros tres principios SOLID**:  
